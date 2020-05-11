@@ -35,12 +35,63 @@ app.use(
 app.use('/ariang', express.static(__dirname + '/ariang'))
 app.get('/', (req, res) => {
 	res.send(`
-<title>404 not found</title>
-<label for="secret">Secret:</label>
-<input id="secret" type="text">
-<button id="panel">Go to panel</button>
-<button id="downloads">View downloaded files</button><br>
-Partial Copyright © <a href="https://qxin.info">xinxin8816</a>.
+<title>SagiriTorrent</title>
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v9/vendor/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v9/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v9/fonts/iconic/css/material-design-iconic-font.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v9/vendor/animate/animate.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v9/vendor/css-hamburgers/hamburgers.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v9/vendor/animsition/css/animsition.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v9/vendor/select2/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v9/vendor/daterangepicker/daterangepicker.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v9/css/util.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v9/css/main.css">
+
+<body>
+<div class="container-login100" style="background-image: url('https://colorlib.com/etc/lf/Login_v9/images/bg-01.jpg');">
+<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+<span class="login100-form-title p-b-37">
+SagiriTorrent
+</span>
+<div class="wrap-input100 validate-input m-b-25" data-validate="Enter password">
+<input class="input100" type="password" id="secret" placeholder="password">
+<span class="focus-input100"></span>
+</div>
+<div class="container-login100-form-btn">
+<button class="login100-form-btn" id="panel">
+Sign In
+</button>
+</div>
+<div class="text-center p-t-57 p-b-20">
+<span class="txt1">
+Contact me:
+</span>
+</div>
+<div class="flex-c p-b-112">
+<a href="https://github.com/sagirisayang" type="_new" class="login100-social-item">
+<i class="fa fa-github"></i>
+</a>
+<a href="http://sagiri.aa.am" type="_new" class="login100-social-item">
+<i class="fa fa-globe"></i>
+</a>
+</div>
+<div class="text-center">
+Forked from<a href="https://github.com/xinxin8816/heroku-ariang-21vianet" type="_new" class="txt2 hov1">
+heroku-ariang21-vianet
+</a>
+</div>
+</form>
+</div>
+</div>
+<div id="dropDownSelect1"></div>
 <script>
 panel.onclick=function(){
 	open('/ariang/#!/settings/rpc/set/wss/'+location.hostname+'/443/jsonrpc/'+btoa(secret.value),'_blank')
