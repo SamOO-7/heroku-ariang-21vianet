@@ -1,30 +1,27 @@
-# Heroku-AriaNG-21vianet. Heroku-AriaNG 世纪互联版
-One-click to build AriaNG on Heroku, and upload to cloud drive when the file download completed.<br>
-在 Heroku 上一键搭建 AriaNG ，并在文件下载完成后上传至网盘。
+# Heroku-AriaNG-21vianet. Heroku-AriaNG
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+Forked from https://github.com/xinxin8816/heroku-ariang-21vianet
+
+One-click to build AriaNG on Heroku, and upload to cloud drive when the file download completed.<br>
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sagirisayang/heroku-ariang-21vianet/tree/master)
 
 Using Rclone with 21vianet mod and Aria2, even UNRAR online by command terminal flexibly? Try this [Heroku Rclone 21vianet](https://github.com/xinxin8816/heroku-rclone-21vianet)<br>
-想通过更灵活的命令行使用 Aria2、Rclone，甚至是 RAR 在线解压？试试这个 [Heroku Rclone 世纪互联版](https://github.com/xinxin8816/heroku-rclone-21vianet)
 
 This repository forked from maple3142/heroku-aria2c and can't merged.<br>
-这个项目是 maple3142/heroku-aria2c 的不可合并分支。
 
-## Abuse Warning 滥用警告
+## Abuse Warning
 
 **This APP designed for best performance so uses a lot of resources.**<br>
-**本应用为最佳性能设计而使用大量资源。**
-
 **Please be careful with that your Heroku account may be suspend.**<br>
-**请注意可能会导致封号。**
 
-## Improvement 改进
+## Improvement
 
-1. Rclone with 21vianet patch and Gclone mod. 融合了世纪互联补丁和 Gclone 模组的 Rclone。
-2. Support mount double cloud drive. 支持双网盘挂载同步。
-3. Improve performance of the built-in Aria2c and Rclone. 大幅提升内置 Aria2c 和 Rclone 性能。
+1. Rclone with 21vianet patch and Gclone mod.
+2. Support mount double cloud drive.
+3. Improve performance of the built-in Aria2c and Rclone.
 
-## Connect Cloud Drive With Rclone 连接网盘
+## Connect Cloud Drive With Rclone
 
 1. Setup Rclone by following [Rclone Docs](https://rclone.org/docs/).<br> 
 Optional: using service account setup with [Gclone Rradme](https://github.com/donwa/gclone) to break Google Drive 750GB limit, Chinese users setup with 21vianet patch to connect OneDrive by 21vianet.<br> 
