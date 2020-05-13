@@ -4,8 +4,16 @@ Forked from https://github.com/xinxin8816/heroku-ariang-21vianet
 
 What's new:
 1. Refreshed the login page (but it'll load slower than before)
-2. Since the "show downloaded files" didn't work, I managed to remove it (I also think that the script originally will move the downloaded files to the Rclone's destination, instead of copy it, so the server won't store those files and it'll run better. You also don't have to wait 30 minutes of inactivity in order to free up the server's storage. I got this inclusion by seeing on-complete.sh, please refer to it, get me know if I was mistaken)
+2. Since the "show downloaded files" button didn't work, I managed to remove it (I also think that the script originally will move the downloaded files to the Rclone's destination, instead of copy it, so the server won't store those files and it'll run better. You also don't have to wait 30 minutes of inactivity in order to free up the server's storage. I got this inclusion by seeing on-complete.sh, please refer to it, get me know if I was mistaken)
+3. Deploy button now works great
 
+What's great from this release:
+1. Uses Gclone mod instead of original Rclone (the dev said that this is able to break the 750GB Gdrive limit, I haven't test it yet)
+2. Deletes the downloaded files right after it's downloaded so it's better for public torrent site since the storage is more likely to have more free space at a time (See on-complete.sh)
+3. Uses 21vianet patch that the dev said it fixes the painfully slow OneDrive transfer
+4. Supports double mount for Rclone, you can upload the files to two places at one time (If you only need one, just leave the second mount config blank)
+
+**Original descriptions:**
 One-click to build AriaNG on Heroku, and upload to cloud drive when the file download completed.<br>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sagirisayang/heroku-ariang-21vianet/tree/master)
@@ -17,7 +25,7 @@ This repository forked from maple3142/heroku-aria2c and can't merged.<br>
 ## Abuse Warning
 
 **This APP designed for best performance so uses a lot of resources.**<br>
-**Please be careful with that your Heroku account may be suspend.**<br>
+**Please be careful with that your Heroku account may be suspended.**<br>
 
 ## Improvement
 
