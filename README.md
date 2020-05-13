@@ -2,6 +2,10 @@
 
 Forked from https://github.com/xinxin8816/heroku-ariang-21vianet
 
+What's new:
+1. Refreshed the login page (but it'll load slower than before)
+2. Since the "show downloaded files" didn't work, I managed to remove it (I also think that the script originally will move the downloaded files to the Rclone's destination, instead of copy it, so the server won't store those files and it'll run better. You also don't have to wait 30 minutes of inactivity in order to free up the server's storage. I got this inclusion by seeing on-complete.sh, please refer to it, get me know if I was mistaken)
+
 One-click to build AriaNG on Heroku, and upload to cloud drive when the file download completed.<br>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sagirisayang/heroku-ariang-21vianet/tree/master)
